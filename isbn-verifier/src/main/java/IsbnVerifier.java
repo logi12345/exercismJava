@@ -2,50 +2,44 @@ class IsbnVerifier {
     boolean verified;
 
     boolean isValid(String stringToVerify) {
-        stringToVerify = stringToVerify.replaceAll("-", "");
+        stringToVerify = stringToVerify.replaceAll("-", ""); // removes all instances of '-' if there are any
 
+        char[] x = stringToVerify.toCharArray();
+        int [] y = new int[10];
 
-        if (stringToVerify.length() != 10) {
+        if (stringToVerify.length() != 10) {    // makes sure there are 10 numbers in the string
+            verified = false;
+        }
+
+        else if (x[9] < 0 || x[9] > 9 || x[9] == 'X') {
             verified = false;
         }
 
         else {
-            char[] x = stringToVerify.toCharArray();
-            int [] y = new int[10];
+            for (int i = 0; (i < 10) && verified == true; i++) {
+                if (x[i] < 0 || x[i] > 9) {
+                    verified = false;
+                }
 
-                for (int i = 0; i < 9; i++) {
-                    if (stringToVerify.charAt(i) < 0 || stringToVerify.charAt(i) > 9) {
-                        verified = false;
+                else {
+                    for(i = 0; i < 10; i++){
+                        y[i] = x[i] - 0;
                     }
 
-                    if(verified != false){
-
-                        if (stringToVerify.charAt(9) < 0 || stringToVerify.charAt(9) > 9 || stringToVerify.charAt(9) == 'X') {
-                            verified = false;
-                        }
-
-                        else {
-                            for(i = 0; i < 9; i++){
-                                y[i] = x[i] - 0;
-                            }
-
-                            if(x[9] == 'X') {
-                                y[9] = 10;
-                            }
-
-                            else if(x[9] != 'X') {
-                                y[9] = x[9] - 0;
-                            }
-
-                            if (((y[0] * 10 + y[1] * 9 + y[2] * 8 + y[3] * 7 + y[4] * 6 + y[5] * 5 + y[6] * 4 + y[7] * 3 + y[8] * 2 + y[9]) % 11) != 0) {
-                                verified = false;
-                            }
-                        }
+                    if(x[i] == 'X') {
+                                y[i] = 10;
                     }
                 }
             }
-        return verified;
         }
+
+        if (((y[0] * 10 + y[1] * 9 + y[2] * 8 + y[3] * 7 + y[4] * 6 + y[5] * 5 + y[6] * 4 + y[7] * 3 + y[8] * 2 + y[9]) % 11) != 0) {
+            verified = false;
+        }
+        return verified;
+    }
+
 }
+
 
 

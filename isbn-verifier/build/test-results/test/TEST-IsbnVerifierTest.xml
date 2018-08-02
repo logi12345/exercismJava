@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IsbnVerifierTest" tests="16" skipped="0" failures="4" errors="0" timestamp="2018-07-29T02:41:44" hostname="Kim-Anhs-MacBook-Pro.local" time="0.019">
+<testsuite name="IsbnVerifierTest" tests="16" skipped="0" failures="4" errors="0" timestamp="2018-08-02T01:43:54" hostname="Kim-Anhs-MacBook-Pro.local" time="0.009">
   <properties/>
   <testcase name="isbnWithoutCheckDigit" classname="IsbnVerifierTest" time="0.001"/>
-  <testcase name="invalidCharacterInIsbn" classname="IsbnVerifierTest" time="0.0"/>
+  <testcase name="invalidCharacterInIsbn" classname="IsbnVerifierTest" time="0.001"/>
   <testcase name="emptyIsbn" classname="IsbnVerifierTest" time="0.0"/>
   <testcase name="validIsbnNumberWithCheckDigitOfTen" classname="IsbnVerifierTest" time="0.002">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
@@ -60,7 +60,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </failure>
   </testcase>
-  <testcase name="checkDigitIsACharacterOtherThanX" classname="IsbnVerifierTest" time="0.0"/>
+  <testcase name="checkDigitIsACharacterOtherThanX" classname="IsbnVerifierTest" time="0.001"/>
   <testcase name="tooLongIsbnAndNoDashes" classname="IsbnVerifierTest" time="0.0"/>
   <testcase name="xIsOnlyValidAsACheckDigit" classname="IsbnVerifierTest" time="0.0"/>
   <testcase name="inputIsNineCharacters" classname="IsbnVerifierTest" time="0.0"/>
@@ -236,7 +236,7 @@
   </testcase>
   <testcase name="checkDigitOfXShouldNotBeUsedForZero" classname="IsbnVerifierTest" time="0.0"/>
   <testcase name="invalidIsbnCheckDigit" classname="IsbnVerifierTest" time="0.0"/>
-  <testcase name="invalidCharactersAreNotIgnored" classname="IsbnVerifierTest" time="0.009"/>
+  <testcase name="invalidCharactersAreNotIgnored" classname="IsbnVerifierTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
