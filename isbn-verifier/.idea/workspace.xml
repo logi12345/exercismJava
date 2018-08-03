@@ -22,8 +22,8 @@
       <file leaf-file-name="IsbnVerifier.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/IsbnVerifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -398,9 +398,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="725" />
+    <option name="x" value="749" />
     <option name="y" value="23" />
-    <option name="width" value="714" />
+    <option name="width" value="690" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectView">
@@ -542,15 +542,15 @@
       <workItem from="1533025986182" duration="599000" />
       <workItem from="1533167471429" duration="3761000" />
       <workItem from="1533228144702" duration="2594000" />
-      <workItem from="1533302096546" duration="1116000" />
+      <workItem from="1533302096546" duration="1284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28324000" />
+    <option name="totallyTimeSpent" value="28492000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="725" y="23" width="714" height="877" extended-state="0" />
+    <frame x="749" y="23" width="690" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -748,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IsbnVerifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
