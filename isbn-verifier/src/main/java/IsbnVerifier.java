@@ -13,18 +13,17 @@ class IsbnVerifier {
 
         else if (verified == true) {
             for (int i = 0; (i < 10) && verified == true; i++) {
-                if (x[i] < 0 || x[i] > 9) {
+                int a = Character.getNumericValue(x[i]);
+                if (a < 0 || a > 9 || a != 33) {
                     verified = false;
                 }
 
-                else if(x[i] == 'X') {
+                else if(a == 33) { //if x[i] == X
                     y[i] = 10;
                 }
 
                 else {
-
-                    y[i] = x[i] - 0;
-
+                    y[i] = a;
                 }
             }
         }
